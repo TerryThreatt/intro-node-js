@@ -1,3 +1,5 @@
+const { getPostsForUser, getUserById} = require('./api')
+
 const showPostsForCurrentUser = (userId, cb) => {
   getPostsForUser(userId, posts => {
     const postTemplates = posts.map(post => {
